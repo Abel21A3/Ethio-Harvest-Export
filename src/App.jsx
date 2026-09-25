@@ -267,37 +267,67 @@ function App() {
 
         {/* ABOUT */}
         <section className="about-section" id="about">
-          <div className="about-content">
+          <div className="about-main">
             <p className="eyebrow">ABOUT US</p>
 
             <h2>
               Bringing Ethiopian products
               <br />
-              closer to global buyers.
+              <span>closer to global buyers.</span>
             </h2>
 
-            <p>
-              Ethio Harvest Export is a fictional demonstration company
-              created to showcase how an Ethiopian export business can build
-              a professional digital presence.
-            </p>
+            <div className="about-copy">
+              <p>
+                Ethio Harvest Export is a fictional demonstration company
+                created to showcase how an Ethiopian export business can
+                build a professional digital presence.
+              </p>
 
-            <p>
-              Our concept focuses on connecting Ethiopian products to buyers
-              through clear communication, product information and a
-              professional online experience.
-            </p>
-          </div>
-
-          <div className="about-side">
-            <div className="about-stat">
-              <strong>ETHIOPIA</strong>
-              <span>Origin</span>
+              <p>
+                Our concept focuses on presenting Ethiopian products clearly,
+                communicating with potential buyers, and creating a simple
+                bridge between product origin and international opportunity.
+              </p>
             </div>
 
-            <div className="about-stat">
-              <strong>GLOBAL</strong>
-              <span>Market Focus</span>
+            <a href="#contact" className="about-link">
+              Start a conversation <span>→</span>
+            </a>
+          </div>
+
+          <div className="about-panel">
+            <div className="about-panel-top">
+              <span>ETHIO HARVEST</span>
+              <span>01 / 03</span>
+            </div>
+
+            <div className="about-origin">
+              <p>OUR FOCUS</p>
+
+              <strong>
+                Origin.
+                <br />
+                Products.
+                <br />
+                Connections.
+              </strong>
+            </div>
+
+            <div className="about-stats">
+              <div className="about-stat">
+                <strong>ETHIOPIA</strong>
+                <span>Product Origin</span>
+              </div>
+
+              <div className="about-stat">
+                <strong>GLOBAL</strong>
+                <span>Market Focus</span>
+              </div>
+
+              <div className="about-stat">
+                <strong>B2B</strong>
+                <span>Trade Communication</span>
+              </div>
             </div>
           </div>
         </section>
