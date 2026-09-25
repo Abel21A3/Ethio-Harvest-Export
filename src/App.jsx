@@ -334,80 +334,164 @@ function App() {
 
         {/* PROCESS */}
         <section className="process-section" id="process">
-          <div className="section-heading">
-            <p className="eyebrow">OUR PROCESS</p>
+          <div className="process-header">
+            <div>
+              <p className="eyebrow">OUR PROCESS</p>
 
-            <h2>From source to connection.</h2>
+              <h2>
+                A clear path from
+                <br />
+                <span>origin to opportunity.</span>
+              </h2>
+            </div>
+
+            <p className="process-intro">
+              A simple framework for presenting products, understanding
+              buyer requirements and opening the right business
+              conversations.
+            </p>
           </div>
 
           <div className="process-grid">
             <div className="process-item">
-              <span>01</span>
+              <div className="process-top">
+                <span>01</span>
+                <span className="process-arrow">↗</span>
+              </div>
 
-              <h3>Source</h3>
+              <div>
+                <p className="process-label">ORIGIN</p>
 
-              <p>
-                Identify agricultural products and establish reliable
-                sourcing relationships.
-              </p>
+                <h3>Source</h3>
+
+                <p>
+                  Identify products and potential sourcing relationships
+                  connected to Ethiopian agricultural production.
+                </p>
+              </div>
             </div>
 
             <div className="process-item">
-              <span>02</span>
+              <div className="process-top">
+                <span>02</span>
+                <span className="process-arrow">↗</span>
+              </div>
 
-              <h3>Prepare</h3>
+              <div>
+                <p className="process-label">DETAILS</p>
 
-              <p>
-                Organize product information and prepare clear communication
-                for potential buyers.
-              </p>
+                <h3>Review</h3>
+
+                <p>
+                  Organize product information, specifications, quantities
+                  and buyer requirements for clear communication.
+                </p>
+              </div>
             </div>
 
             <div className="process-item">
-              <span>03</span>
+              <div className="process-top">
+                <span>03</span>
+                <span className="process-arrow">↗</span>
+              </div>
 
-              <h3>Connect</h3>
+              <div>
+                <p className="process-label">DIALOGUE</p>
 
-              <p>
-                Connect with international buyers through direct inquiries
-                and business communication.
-              </p>
+                <h3>Connect</h3>
+
+                <p>
+                  Open direct communication with international buyers and
+                  discuss potential trade opportunities.
+                </p>
+              </div>
+            </div>
+
+            <div className="process-item">
+              <div className="process-top">
+                <span>04</span>
+                <span className="process-arrow">↗</span>
+              </div>
+
+              <div>
+                <p className="process-label">NEXT STEP</p>
+
+                <h3>Coordinate</h3>
+
+                <p>
+                  Move agreed requirements toward the next stage of the
+                  business relationship and trade discussion.
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
         {/* CONTACT */}
         <section className="contact-section" id="contact">
-          <div>
-            <p className="eyebrow">GET IN TOUCH</p>
+          <div className="contact-content">
+            <p className="eyebrow">START A CONVERSATION</p>
 
-            <h2>Looking for Ethiopian products?</h2>
+            <h2>
+              Let's connect
+              <br />
+              <span>across markets.</span>
+            </h2>
 
-            <p>
-              Contact us to discuss products, quantities, markets and
-              potential business opportunities.
+            <p className="contact-text">
+              Whether you are looking for Ethiopian coffee, sesame or other
+              agricultural products, let's discuss your requirements and
+              explore potential business opportunities.
             </p>
+
+            <div className="contact-details">
+              <div>
+                <span>EMAIL</span>
+                <a href="mailto:info@ethioharvest.example">
+                  info@ethioharvest.example
+                </a>
+              </div>
+
+              <div>
+                <span>LOCATION</span>
+                <strong>Addis Ababa, Ethiopia</strong>
+              </div>
+
+              <div>
+                <span>MARKET</span>
+                <strong>International B2B</strong>
+              </div>
+            </div>
           </div>
 
-          <a
-            href="mailto:info@ethioharvest.example"
-            className="contact-button"
-          >
-            info@ethioharvest.example
-          </a>
+          <div className="contact-action">
+            <p>READY TO DISCUSS YOUR REQUIREMENTS?</p>
+
+            <a
+              href="mailto:info@ethioharvest.example"
+              className="contact-button"
+            >
+              Send an Inquiry <span>↗</span>
+            </a>
+
+            <small>
+              We welcome product inquiries, sourcing questions and potential
+              business collaborations.
+            </small>
+          </div>
         </section>
+
+        {/* FOOTER */}
+        <footer className="footer">
+          <div>
+            <strong>ETHIO HARVEST</strong>
+
+            <p>Ethiopian products. Global connections.</p>
+          </div>
+
+          <p>© 2026 Ethio Harvest Export — Demo Website</p>
+        </footer>
       </main>
-
-      {/* FOOTER */}
-      <footer className="footer">
-        <div>
-          <strong>ETHIO HARVEST</strong>
-
-          <p>Ethiopian products. Global connections.</p>
-        </div>
-
-        <p>© 2026 Ethio Harvest Export — Demo Website</p>
-      </footer>
     </>
   )
 }
