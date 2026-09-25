@@ -1,133 +1,139 @@
 import './App.css'
-
-import coffeeImage from './assets/ethiopian-coffee.jpg'
+import coffeeImage from './assets/ethiopian-coffee.webp'
 import coffeeProduct from './assets/coffee-product.jpg'
 import sesameProduct from './assets/sesame-product.jpg'
 import agricultureProduct from './assets/agriculture-product.jpg'
 
 function App() {
   return (
-    <div className="site">
+    <>
+      {/* NAVBAR */}
+      <nav className="navbar">
+        <div className="nav-container">
+          <a href="#home" className="logo">
+            ETHIO<span>HARVEST</span>
+          </a>
 
-      <header className="navbar">
-        <a href="#home" className="logo">
-          ETHIO<span>HARVEST</span>
-        </a>
+          <div className="nav-links">
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#process">Process</a>
+            <a href="#contact">Contact</a>
+          </div>
 
-        <nav>
-          <a href="#home">Home</a>
-          <a href="#products">Products</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-        </nav>
-
-        <a href="#contact" className="nav-button">
-          Request a Quote
-        </a>
-      </header>
+          <a href="#contact" className="nav-button">
+            Request a Quote
+          </a>
+        </div>
+      </nav>
 
       <main>
-
-        <section id="home" className="hero-section">
-
+        {/* HERO */}
+        <section className="hero" id="home">
           <div className="hero-content">
-            <p className="eyebrow">
-              ETHIOPIAN EXPORT COMPANY
-            </p>
+            <p className="eyebrow">ETHIOPIAN EXPORT COMPANY</p>
 
             <h1>
-              Connecting
-              <span> Ethiopia </span>
-              to the World.
+              Ethiopian products.
+              <br />
+              <span>Global connections.</span>
             </h1>
 
             <p className="hero-text">
-              Premium Ethiopian coffee, sesame and agricultural
-              products prepared for international markets.
+              Connecting quality Ethiopian coffee, sesame and agricultural
+              products with buyers around the world.
             </p>
 
             <div className="hero-buttons">
-              <a href="#products" className="primary-button">
+              <a href="#products" className="button button-primary">
                 Explore Products
               </a>
 
-              <a href="#contact" className="secondary-button">
+              <a href="#contact" className="button button-secondary">
                 Request a Quote
               </a>
             </div>
+
+            <div className="hero-details">
+              <div>
+                <strong>ETHIOPIA</strong>
+                <span>Product Origin</span>
+              </div>
+
+              <div>
+                <strong>GLOBAL</strong>
+                <span>Market Focus</span>
+              </div>
+
+              <div>
+                <strong>B2B</strong>
+                <span>Trade Inquiries</span>
+              </div>
+            </div>
           </div>
 
-          <div className="hero-card">
+          <div className="hero-visual">
             <img
               src={coffeeImage}
               alt="Ethiopian coffee"
               className="hero-image"
             />
 
-            <div className="hero-card-content">
-              <p>ETHIOPIAN</p>
+            <div className="hero-image-label">
+              <span>ETHIOPIAN</span>
               <strong>ORIGIN</strong>
-              <span>From the land of origin</span>
+              <small>From the land of origin</small>
+            </div>
+
+            <div className="hero-image-badge">
+              <span>01</span>
+              <p>
+                Explore
+                <br />
+                our products
+              </p>
             </div>
           </div>
-
         </section>
 
-
-        <section id="products" className="section">
-
+        {/* PRODUCTS */}
+        <section className="products-section" id="products">
           <div className="section-heading">
-            <p className="eyebrow">
-              OUR PRODUCTS
-            </p>
+            <p className="eyebrow">OUR PRODUCTS</p>
 
-            <h2>
-              Products from Ethiopia
-            </h2>
+            <h2>From Ethiopia to Global Markets</h2>
 
             <p>
-              Carefully selected products sourced from Ethiopian
-              producers and prepared for global markets.
+              Carefully selected agricultural products presented for
+              international buyers.
             </p>
           </div>
 
-
-          <div className="products-grid">
-
+          <div className="product-grid">
+            {/* COFFEE */}
             <article className="product-card">
-
               <img
                 src={coffeeProduct}
-                alt="Ethiopian coffee"
+                alt="Ethiopian coffee ceremony"
                 className="product-image"
               />
 
               <div className="product-content">
+                <p className="product-category">COFFEE</p>
 
-                <p className="product-category">
-                  COFFEE
-                </p>
-
-                <h3>
-                  Ethiopian Coffee
-                </h3>
+                <h3>Ethiopian Coffee</h3>
 
                 <p>
-                  Specialty and commercial coffee sourced from
-                  renowned Ethiopian coffee-growing regions.
+                  Ethiopian coffee sourced from the country's rich coffee
+                  growing regions.
                 </p>
 
-                <a href="#contact">
-                  Request Information →
-                </a>
-
+                <a href="#contact">Request Information →</a>
               </div>
-
             </article>
 
-
+            {/* SESAME */}
             <article className="product-card">
-
               <img
                 src={sesameProduct}
                 alt="Ethiopian sesame seeds"
@@ -135,31 +141,21 @@ function App() {
               />
 
               <div className="product-content">
+                <p className="product-category">OILSEEDS</p>
 
-                <p className="product-category">
-                  AGRICULTURAL
-                </p>
-
-                <h3>
-                  Sesame Seeds
-                </h3>
+                <h3>Sesame Seeds</h3>
 
                 <p>
-                  Quality Ethiopian sesame prepared for
-                  international food and agricultural markets.
+                  Quality sesame products prepared for buyers seeking
+                  Ethiopian agricultural commodities.
                 </p>
 
-                <a href="#contact">
-                  Request Information →
-                </a>
-
+                <a href="#contact">Request Information →</a>
               </div>
-
             </article>
 
-
+            {/* AGRICULTURAL PRODUCTS */}
             <article className="product-card">
-
               <img
                 src={agricultureProduct}
                 alt="Ethiopian agricultural products"
@@ -167,153 +163,200 @@ function App() {
               />
 
               <div className="product-content">
+                <p className="product-category">AGRICULTURE</p>
 
-                <p className="product-category">
-                  AGRICULTURE
-                </p>
-
-                <h3>
-                  Agricultural Products
-                </h3>
+                <h3>Agricultural Products</h3>
 
                 <p>
-                  A growing selection of Ethiopian agricultural
-                  commodities available for international buyers.
+                  A selection of Ethiopian agricultural products available
+                  for international trade inquiries.
                 </p>
 
-                <a href="#contact">
-                  Request Information →
-                </a>
-
+                <a href="#contact">Request Information →</a>
               </div>
-
             </article>
-
           </div>
-
         </section>
 
-
-        <section id="about" className="about-section">
-
-          <div>
-            <p className="eyebrow">
-              ABOUT ETHIO HARVEST
-            </p>
+        {/* WHY ETHIOPIA */}
+        <section className="why-section">
+          <div className="why-intro">
+            <p className="eyebrow">WHY ETHIOPIA</p>
 
             <h2>
-              From Ethiopian producers to global buyers.
+              Products with
+              <br />
+              <span>origin and character.</span>
             </h2>
-          </div>
-
-          <div className="about-text">
-            <p>
-              Ethio Harvest Export is a fictional demonstration
-              company created to showcase how an Ethiopian export
-              business can build a professional digital presence.
-            </p>
 
             <p>
-              Our focus is connecting quality Ethiopian products
-              with buyers around the world through reliable
-              communication and transparent product information.
+              Ethiopia's agricultural landscape offers a diverse range of
+              products with strong connections to their places of origin.
             </p>
           </div>
 
+          <div className="why-grid">
+            <div className="why-card">
+              <div className="why-number">01</div>
+
+              <h3>Rich Agricultural Heritage</h3>
+
+              <p>
+                Ethiopia has a long agricultural tradition and diverse
+                growing environments supporting a wide range of products.
+              </p>
+            </div>
+
+            <div className="why-card">
+              <div className="why-number">02</div>
+
+              <h3>Coffee's Birthplace</h3>
+
+              <p>
+                Ethiopia is widely recognized as the birthplace of coffee,
+                with its origins traditionally associated with the Kaffa
+                region.
+              </p>
+            </div>
+
+            <div className="why-card">
+              <div className="why-number">03</div>
+
+              <h3>Product Diversity</h3>
+
+              <p>
+                Coffee, sesame and other agricultural commodities create
+                opportunities to serve different international markets.
+              </p>
+            </div>
+
+            <div className="why-card">
+              <div className="why-number">04</div>
+
+              <h3>Global Connections</h3>
+
+              <p>
+                A professional digital presence helps exporters communicate
+                their products and connect with potential buyers.
+              </p>
+            </div>
+          </div>
         </section>
 
+        {/* ABOUT */}
+        <section className="about-section" id="about">
+          <div className="about-content">
+            <p className="eyebrow">ABOUT US</p>
 
-        <section className="process-section">
+            <h2>
+              Bringing Ethiopian products
+              <br />
+              closer to global buyers.
+            </h2>
 
+            <p>
+              Ethio Harvest Export is a fictional demonstration company
+              created to showcase how an Ethiopian export business can build
+              a professional digital presence.
+            </p>
+
+            <p>
+              Our concept focuses on connecting Ethiopian products to buyers
+              through clear communication, product information and a
+              professional online experience.
+            </p>
+          </div>
+
+          <div className="about-side">
+            <div className="about-stat">
+              <strong>ETHIOPIA</strong>
+              <span>Origin</span>
+            </div>
+
+            <div className="about-stat">
+              <strong>GLOBAL</strong>
+              <span>Market Focus</span>
+            </div>
+          </div>
+        </section>
+
+        {/* PROCESS */}
+        <section className="process-section" id="process">
           <div className="section-heading">
-            <p className="eyebrow">
-              OUR PROCESS
-            </p>
+            <p className="eyebrow">OUR PROCESS</p>
 
-            <h2>
-              Simple. Clear. Reliable.
-            </h2>
+            <h2>From source to connection.</h2>
           </div>
 
           <div className="process-grid">
-
-            <div>
+            <div className="process-item">
               <span>01</span>
+
               <h3>Source</h3>
+
               <p>
-                Connect with trusted Ethiopian producers and suppliers.
+                Identify agricultural products and establish reliable
+                sourcing relationships.
               </p>
             </div>
 
-            <div>
+            <div className="process-item">
               <span>02</span>
+
               <h3>Prepare</h3>
+
               <p>
-                Prepare products and documentation for export markets.
+                Organize product information and prepare clear communication
+                for potential buyers.
               </p>
             </div>
 
-            <div>
+            <div className="process-item">
               <span>03</span>
+
               <h3>Connect</h3>
+
               <p>
-                Respond to international buyer inquiries and requests.
+                Connect with international buyers through direct inquiries
+                and business communication.
               </p>
             </div>
-
           </div>
-
         </section>
 
-
-        <section id="contact" className="contact-section">
-
+        {/* CONTACT */}
+        <section className="contact-section" id="contact">
           <div>
-            <p className="eyebrow">
-              LET'S WORK TOGETHER
-            </p>
+            <p className="eyebrow">GET IN TOUCH</p>
 
-            <h2>
-              Looking for Ethiopian products?
-            </h2>
+            <h2>Looking for Ethiopian products?</h2>
 
             <p>
-              Contact our team to discuss products, quantities
-              and international sourcing requirements.
+              Contact us to discuss products, quantities, markets and
+              potential business opportunities.
             </p>
           </div>
 
           <a
             href="mailto:info@ethioharvest.example"
-            className="primary-button"
+            className="contact-button"
           >
-            Request a Quote
+            info@ethioharvest.example
           </a>
-
         </section>
-
       </main>
 
-
-      <footer>
-
+      {/* FOOTER */}
+      <footer className="footer">
         <div>
-          <a href="#home" className="logo">
-            ETHIO<span>HARVEST</span>
-          </a>
+          <strong>ETHIO HARVEST</strong>
 
-          <p>
-            Ethiopian products. Global connections.
-          </p>
+          <p>Ethiopian products. Global connections.</p>
         </div>
 
-        <p>
-          © 2026 Ethio Harvest Export — Demo Website
-        </p>
-
+        <p>© 2026 Ethio Harvest Export — Demo Website</p>
       </footer>
-
-    </div>
+    </>
   )
 }
 
