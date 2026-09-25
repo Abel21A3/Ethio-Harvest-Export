@@ -98,47 +98,65 @@ function App() {
 
         {/* PRODUCTS */}
         <section className="products-section" id="products">
-          <div className="section-heading">
-            <p className="eyebrow">OUR PRODUCTS</p>
+          <div className="products-header">
+            <div>
+              <p className="eyebrow">OUR PRODUCTS</p>
 
-            <h2>From Ethiopia to Global Markets</h2>
+              <h2>
+                From Ethiopia
+                <br />
+                <span>to global markets.</span>
+              </h2>
+            </div>
 
-            <p>
-              Carefully selected agricultural products presented for
-              international buyers.
+            <p className="products-intro">
+              Carefully selected Ethiopian agricultural products presented
+              for international buyers seeking reliable sourcing
+              opportunities.
             </p>
           </div>
 
           <div className="product-grid">
-            {/* COFFEE */}
-            <article className="product-card">
-              <img
-                src={coffeeProduct}
-                alt="Ethiopian coffee ceremony"
-                className="product-image"
-              />
+            {/* FEATURED COFFEE */}
+            <article className="product-card product-card-featured">
+              <div className="product-image-wrap">
+                <img
+                  src={coffeeProduct}
+                  alt="Ethiopian coffee"
+                  className="product-image"
+                />
+
+                <span className="product-tag">FEATURED PRODUCT</span>
+              </div>
 
               <div className="product-content">
-                <p className="product-category">COFFEE</p>
+                <div>
+                  <p className="product-category">COFFEE</p>
 
-                <h3>Ethiopian Coffee</h3>
+                  <h3>Ethiopian Coffee</h3>
 
-                <p>
-                  Ethiopian coffee sourced from the country's rich coffee
-                  growing regions.
-                </p>
+                  <p>
+                    Ethiopian coffee sourced from the country's renowned
+                    coffee-growing regions and presented for international
+                    trade inquiries.
+                  </p>
+                </div>
 
-                <a href="#contact">Request Information →</a>
+                <a href="#contact" className="product-link">
+                  Request Information <span>→</span>
+                </a>
               </div>
             </article>
 
             {/* SESAME */}
             <article className="product-card">
-              <img
-                src={sesameProduct}
-                alt="Ethiopian sesame seeds"
-                className="product-image"
-              />
+              <div className="product-image-wrap">
+                <img
+                  src={sesameProduct}
+                  alt="Ethiopian sesame seeds"
+                  className="product-image"
+                />
+              </div>
 
               <div className="product-content">
                 <p className="product-category">OILSEEDS</p>
@@ -146,21 +164,25 @@ function App() {
                 <h3>Sesame Seeds</h3>
 
                 <p>
-                  Quality sesame products prepared for buyers seeking
-                  Ethiopian agricultural commodities.
+                  Ethiopian sesame products presented for buyers seeking
+                  agricultural commodities for international markets.
                 </p>
 
-                <a href="#contact">Request Information →</a>
+                <a href="#contact" className="product-link">
+                  Request Information <span>→</span>
+                </a>
               </div>
             </article>
 
-            {/* AGRICULTURAL PRODUCTS */}
+            {/* AGRICULTURE */}
             <article className="product-card">
-              <img
-                src={agricultureProduct}
-                alt="Ethiopian agricultural products"
-                className="product-image"
-              />
+              <div className="product-image-wrap">
+                <img
+                  src={agricultureProduct}
+                  alt="Ethiopian agricultural products"
+                  className="product-image"
+                />
+              </div>
 
               <div className="product-content">
                 <p className="product-category">AGRICULTURE</p>
@@ -172,7 +194,9 @@ function App() {
                   for international trade inquiries.
                 </p>
 
-                <a href="#contact">Request Information →</a>
+                <a href="#contact" className="product-link">
+                  Request Information <span>→</span>
+                </a>
               </div>
             </article>
           </div>
