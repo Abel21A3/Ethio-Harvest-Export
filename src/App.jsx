@@ -117,7 +117,6 @@ function App() {
           </div>
 
           <div className="product-grid">
-            {/* FEATURED COFFEE */}
             <article className="product-card product-card-featured">
               <div className="product-image-wrap">
                 <img
@@ -148,7 +147,6 @@ function App() {
               </div>
             </article>
 
-            {/* SESAME */}
             <article className="product-card">
               <div className="product-image-wrap">
                 <img
@@ -174,7 +172,6 @@ function App() {
               </div>
             </article>
 
-            {/* AGRICULTURE */}
             <article className="product-card">
               <div className="product-image-wrap">
                 <img
@@ -208,14 +205,15 @@ function App() {
             <p className="eyebrow">WHY ETHIOPIA</p>
 
             <h2>
-              Products with
+              The origin
               <br />
-              <span>origin and character.</span>
+              <span>matters.</span>
             </h2>
 
             <p>
-              Ethiopia's agricultural landscape offers a diverse range of
-              products with strong connections to their places of origin.
+              Ethiopia's diverse agricultural landscape creates products
+              with strong connections to their places of origin and
+              opportunities for international trade.
             </p>
           </div>
 
@@ -223,7 +221,7 @@ function App() {
             <div className="why-card">
               <div className="why-number">01</div>
 
-              <h3>Rich Agricultural Heritage</h3>
+              <h3>Agricultural Heritage</h3>
 
               <p>
                 Ethiopia has a long agricultural tradition and diverse
@@ -234,7 +232,7 @@ function App() {
             <div className="why-card">
               <div className="why-number">02</div>
 
-              <h3>Coffee's Birthplace</h3>
+              <h3>Coffee Origin</h3>
 
               <p>
                 Ethiopia is widely recognized as the birthplace of coffee,
@@ -257,11 +255,11 @@ function App() {
             <div className="why-card">
               <div className="why-number">04</div>
 
-              <h3>Global Connections</h3>
+              <h3>Global Opportunity</h3>
 
               <p>
-                A professional digital presence helps exporters communicate
-                their products and connect with potential buyers.
+                Connecting Ethiopian products with international buyers
+                creates opportunities for long-term business relationships.
               </p>
             </div>
           </div>

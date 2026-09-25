@@ -585,7 +585,7 @@ body {
 ========================= */
 
 .why-section {
-  padding: 110px 7%;
+  padding: 120px 7%;
 
   background: var(--green);
   color: var(--white);
@@ -594,13 +594,13 @@ body {
 
   grid-template-columns: 0.9fr 1.4fr;
 
-  gap: 80px;
+  gap: 90px;
 
   align-items: start;
 }
 
 .why-intro {
-  position: static;
+  max-width: 520px;
 }
 
 .why-intro .eyebrow {
@@ -608,13 +608,15 @@ body {
 }
 
 .why-intro h2 {
-  margin: 15px 0 25px;
+  margin: 18px 0 28px;
 
   font-family: 'Playfair Display', Georgia, serif;
 
-  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-size: clamp(3rem, 5vw, 4.8rem);
 
-  line-height: 1.05;
+  line-height: 1;
+
+  letter-spacing: -0.035em;
 }
 
 .why-intro h2 span {
@@ -622,19 +624,15 @@ body {
 }
 
 .why-intro > p:last-child {
-  display: block;
+  max-width: 480px;
 
-  max-width: 430px;
+  margin: 0;
 
-  margin-top: 25px;
+  color: rgba(255, 255, 255, 0.75);
 
-  color: #f5f0e6;
+  font-size: 1rem;
 
-  font-size: 1.05rem;
-
-  line-height: 1.8;
-
-  opacity: 1;
+  line-height: 1.9;
 }
 
 .why-grid {
@@ -648,35 +646,51 @@ body {
 }
 
 .why-card {
-  min-height: 260px;
+  min-height: 280px;
 
   padding: 38px;
 
   background: var(--green);
+
+  transition: background 0.25s ease;
+}
+
+.why-card:hover {
+  background: var(--green-light);
 }
 
 .why-number {
-  margin-bottom: 55px;
+  margin-bottom: 65px;
 
   color: #d5b46a;
 
-  font-size: 0.8rem;
+  font-size: 0.75rem;
 
-  letter-spacing: 0.15em;
+  font-weight: 700;
+
+  letter-spacing: 0.16em;
 }
 
 .why-card h3 {
   margin: 0 0 15px;
 
-  font-size: 1.25rem;
+  font-family: 'Playfair Display', Georgia, serif;
+
+  font-size: 1.45rem;
+
+  font-weight: 600;
 }
 
 .why-card p {
+  max-width: 330px;
+
   margin: 0;
 
-  color: rgba(255, 255, 255, 0.68);
+  color: rgba(255, 255, 255, 0.65);
 
-  line-height: 1.7;
+  font-size: 0.9rem;
+
+  line-height: 1.75;
 }
 
 
@@ -796,6 +810,7 @@ body {
   font-size: clamp(2.5rem, 5vw, 4.2rem);
 
   line-height: 1.05;
+
   letter-spacing: -0.03em;
 }
 
@@ -1018,7 +1033,11 @@ body {
   .why-section {
     grid-template-columns: 1fr;
 
-    gap: 50px;
+    gap: 55px;
+  }
+
+  .why-intro {
+    max-width: 750px;
   }
 
   .about-section {
@@ -1060,6 +1079,10 @@ body {
 
   .product-card {
     max-width: 650px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr 1fr;
   }
 
   .process-grid {
@@ -1133,6 +1156,10 @@ body {
 
   .why-card {
     min-height: auto;
+  }
+
+  .why-number {
+    margin-bottom: 35px;
   }
 
   .footer {
@@ -1222,6 +1249,10 @@ body {
   .about-section,
   .process-section {
     padding: 80px 5%;
+  }
+
+  .why-intro h2 {
+    font-size: 3rem;
   }
 
   .why-card {
